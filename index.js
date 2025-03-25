@@ -3,9 +3,9 @@
 
 if (process.argv.length > 2) {
 
-    let newString = '';
+    let newString = process.argv[2];
 
-    for (let i = 2; i < process.argv.length; i++) {
+    for (let i = 3; i < process.argv.length; i++) {
 
         newString+= ` ${process.argv[i]}`;
     }
